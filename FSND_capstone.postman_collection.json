@@ -1,0 +1,292 @@
+{
+	"info": {
+		"_postman_id": "ed42f149-d5f3-4b36-b42e-47bb9f12e9d6",
+		"name": "FSND_capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Movies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpkSENjYWVZeTVpVzZLaTJxNXV1WSJ9.eyJpc3MiOiJodHRwczovL3RhaW50MjQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0MzI1ODliZDhjZDJlODhkMGVhMDZkZCIsImF1ZCI6ImZzbmQiLCJpYXQiOjE2ODEwMjYyNDYsImV4cCI6MTY4MTExMjY0NiwiYXpwIjoiTVBsNkM2aXlrOTVNS203TURHNE1WMUNOcmdoVmpCOG4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImFkZDphY3RvcnMiLCJhZGQ6bW92aWVzIiwiZGVsZXRlOmFjdG9ycyIsImRlbGV0ZTptb3ZpZXMiLCJyZWFkOmFjdG9ycyIsInJlYWQ6bW92aWVzIiwidXBkYXRlOmFjdG9ycyIsInVwZGF0ZTptb3ZpZXMiXX0.n-l5QcN3EAPeq6FVyQSp35mBZ7-koU4HryTkHizYfVUWr8I-bAYWCRkfRIoLo6Ge8rqeLQWXv4YCWT-NMduO_7SzoKnNnGsvE5UYv_LelBK3ZurPXUXsyH29Cwxken-nSCgSy7IMCmPdgXIsOQc4rdXZaYev9uHqAHRHregwcBEyxmayiRJlGQlBuQw2pTi0hxmaNiIVcuK5_3ZCuoUG69vgYD-nOwKbm_ij9pITv5efdJyNg3g0k48EcGtMKzNyzqBHMwK1p4iaUhb_gZlB8gOAeeo9yhijU1boesck6krvjFQHxi_tBa8bln9TGJNeedHnW4TA8B2KkoMz6neOhw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/movies",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Actors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpkSENjYWVZeTVpVzZLaTJxNXV1WSJ9.eyJpc3MiOiJodHRwczovL3RhaW50MjQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0MzI1ODRhZDhjZDJlODhkMGVhMDZjZSIsImF1ZCI6ImZzbmQiLCJpYXQiOjE2ODEwMjE0NjIsImV4cCI6MTY4MTEwNzg2MiwiYXpwIjoiTVBsNkM2aXlrOTVNS203TURHNE1WMUNOcmdoVmpCOG4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbInJlYWQ6YWN0b3JzIiwicmVhZDptb3ZpZXMiXX0.D2r4F9UMwrxzqJmvojp5HTXMGJsKOVG9uOxdBzi8xOHEGvpfEbARhxrHG9uvYPH3Yc_oUwWFCZ_ABBF8JPlRiZdmv82_LM9q6aXwBe4-k5OJbkM6K0KQnDf13rqTkWcU3CWbmuinzHJGeCd2LlUvC3aZyfoqEX_belZ8jWvVwVlHo8NFnzrCIBE-rFg3sVCNerLIBzl_Q-eO83-ohlyVZeaQzSSQOah4Wmc7In-IwON9UilxpxZQtvY7qClFufMCEO-8c2W7ar0N3-0510J4mFfLZ-hpq-YhrAW7kAMbZdnNXFitgX8JpcQ7FDiU-2Q5FlXuMBHaeSZ-ElEM1vbDqA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/actors",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add actors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpkSENjYWVZeTVpVzZLaTJxNXV1WSJ9.eyJpc3MiOiJodHRwczovL3RhaW50MjQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0MzI1ODc4YzU0YzM4NjcxZTkyYzY4NCIsImF1ZCI6ImZzbmQiLCJpYXQiOjE2ODEwMjIzMjYsImV4cCI6MTY4MTEwODcyNiwiYXpwIjoiTVBsNkM2aXlrOTVNS203TURHNE1WMUNOcmdoVmpCOG4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImFkZDphY3RvcnMiLCJkZWxldGU6YWN0b3JzIiwicmVhZDphY3RvcnMiLCJyZWFkOm1vdmllcyIsInVwZGF0ZTphY3RvcnMiLCJ1cGRhdGU6bW92aWVzIl19.Wh4lgsIZxYxGIrcDS-iuuETgY4VuUBcAtzQkouMkQvnp6npg-rlyxlosF6o3l9MjL799CST96qCCqj-OWWKdOCHr-hMVluKM4e_2588brYQBLhjEruvPcfOtynyhiICooLYX1ytb_MKYVLodDCFJ_RMfPLqNhE781C_Yps-4tt-XTSjiBaiRLLrcM921Ey4-tLeGeu2R1AePw6tTcslR0TG5FW2B9eU78poHFwss4GIgdH2LoK2VUeNjSpsQ8D_weViFmniNMEvoOg0V2CNhJJJ8pN1ycO6QI2a8FpJCwotcyFDHqv3keeO125YEwHPBbObamTdzEOp3gqdKbUEgWA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tai\",\r\n    \"age\": 24,\r\n    \"gender\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/actors",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete actor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpkSENjYWVZeTVpVzZLaTJxNXV1WSJ9.eyJpc3MiOiJodHRwczovL3RhaW50MjQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0MzI1ODc4YzU0YzM4NjcxZTkyYzY4NCIsImF1ZCI6ImZzbmQiLCJpYXQiOjE2ODEwMjIzMjYsImV4cCI6MTY4MTEwODcyNiwiYXpwIjoiTVBsNkM2aXlrOTVNS203TURHNE1WMUNOcmdoVmpCOG4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImFkZDphY3RvcnMiLCJkZWxldGU6YWN0b3JzIiwicmVhZDphY3RvcnMiLCJyZWFkOm1vdmllcyIsInVwZGF0ZTphY3RvcnMiLCJ1cGRhdGU6bW92aWVzIl19.Wh4lgsIZxYxGIrcDS-iuuETgY4VuUBcAtzQkouMkQvnp6npg-rlyxlosF6o3l9MjL799CST96qCCqj-OWWKdOCHr-hMVluKM4e_2588brYQBLhjEruvPcfOtynyhiICooLYX1ytb_MKYVLodDCFJ_RMfPLqNhE781C_Yps-4tt-XTSjiBaiRLLrcM921Ey4-tLeGeu2R1AePw6tTcslR0TG5FW2B9eU78poHFwss4GIgdH2LoK2VUeNjSpsQ8D_weViFmniNMEvoOg0V2CNhJJJ8pN1ycO6QI2a8FpJCwotcyFDHqv3keeO125YEwHPBbObamTdzEOp3gqdKbUEgWA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/actors/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"actors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update actor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpkSENjYWVZeTVpVzZLaTJxNXV1WSJ9.eyJpc3MiOiJodHRwczovL3RhaW50MjQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0MzI1ODc4YzU0YzM4NjcxZTkyYzY4NCIsImF1ZCI6ImZzbmQiLCJpYXQiOjE2ODEwMjIzMjYsImV4cCI6MTY4MTEwODcyNiwiYXpwIjoiTVBsNkM2aXlrOTVNS203TURHNE1WMUNOcmdoVmpCOG4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImFkZDphY3RvcnMiLCJkZWxldGU6YWN0b3JzIiwicmVhZDphY3RvcnMiLCJyZWFkOm1vdmllcyIsInVwZGF0ZTphY3RvcnMiLCJ1cGRhdGU6bW92aWVzIl19.Wh4lgsIZxYxGIrcDS-iuuETgY4VuUBcAtzQkouMkQvnp6npg-rlyxlosF6o3l9MjL799CST96qCCqj-OWWKdOCHr-hMVluKM4e_2588brYQBLhjEruvPcfOtynyhiICooLYX1ytb_MKYVLodDCFJ_RMfPLqNhE781C_Yps-4tt-XTSjiBaiRLLrcM921Ey4-tLeGeu2R1AePw6tTcslR0TG5FW2B9eU78poHFwss4GIgdH2LoK2VUeNjSpsQ8D_weViFmniNMEvoOg0V2CNhJJJ8pN1ycO6QI2a8FpJCwotcyFDHqv3keeO125YEwHPBbObamTdzEOp3gqdKbUEgWA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gender\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/actors/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"actors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpkSENjYWVZeTVpVzZLaTJxNXV1WSJ9.eyJpc3MiOiJodHRwczovL3RhaW50MjQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0MzI1ODc4YzU0YzM4NjcxZTkyYzY4NCIsImF1ZCI6ImZzbmQiLCJpYXQiOjE2ODEwMjIzMjYsImV4cCI6MTY4MTEwODcyNiwiYXpwIjoiTVBsNkM2aXlrOTVNS203TURHNE1WMUNOcmdoVmpCOG4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImFkZDphY3RvcnMiLCJkZWxldGU6YWN0b3JzIiwicmVhZDphY3RvcnMiLCJyZWFkOm1vdmllcyIsInVwZGF0ZTphY3RvcnMiLCJ1cGRhdGU6bW92aWVzIl19.Wh4lgsIZxYxGIrcDS-iuuETgY4VuUBcAtzQkouMkQvnp6npg-rlyxlosF6o3l9MjL799CST96qCCqj-OWWKdOCHr-hMVluKM4e_2588brYQBLhjEruvPcfOtynyhiICooLYX1ytb_MKYVLodDCFJ_RMfPLqNhE781C_Yps-4tt-XTSjiBaiRLLrcM921Ey4-tLeGeu2R1AePw6tTcslR0TG5FW2B9eU78poHFwss4GIgdH2LoK2VUeNjSpsQ8D_weViFmniNMEvoOg0V2CNhJJJ8pN1ycO6QI2a8FpJCwotcyFDHqv3keeO125YEwHPBbObamTdzEOp3gqdKbUEgWA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"release_date\": \"2020-10-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/movies/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add movies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpkSENjYWVZeTVpVzZLaTJxNXV1WSJ9.eyJpc3MiOiJodHRwczovL3RhaW50MjQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0MzI1ODliZDhjZDJlODhkMGVhMDZkZCIsImF1ZCI6ImZzbmQiLCJpYXQiOjE2ODEwMjYyNDYsImV4cCI6MTY4MTExMjY0NiwiYXpwIjoiTVBsNkM2aXlrOTVNS203TURHNE1WMUNOcmdoVmpCOG4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImFkZDphY3RvcnMiLCJhZGQ6bW92aWVzIiwiZGVsZXRlOmFjdG9ycyIsImRlbGV0ZTptb3ZpZXMiLCJyZWFkOmFjdG9ycyIsInJlYWQ6bW92aWVzIiwidXBkYXRlOmFjdG9ycyIsInVwZGF0ZTptb3ZpZXMiXX0.n-l5QcN3EAPeq6FVyQSp35mBZ7-koU4HryTkHizYfVUWr8I-bAYWCRkfRIoLo6Ge8rqeLQWXv4YCWT-NMduO_7SzoKnNnGsvE5UYv_LelBK3ZurPXUXsyH29Cwxken-nSCgSy7IMCmPdgXIsOQc4rdXZaYev9uHqAHRHregwcBEyxmayiRJlGQlBuQw2pTi0hxmaNiIVcuK5_3ZCuoUG69vgYD-nOwKbm_ij9pITv5efdJyNg3g0k48EcGtMKzNyzqBHMwK1p4iaUhb_gZlB8gOAeeo9yhijU1boesck6krvjFQHxi_tBa8bln9TGJNeedHnW4TA8B2KkoMz6neOhw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Fast and furious 9\",\r\n    \"release_date\": \"2020-10-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/movies",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete movies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpkSENjYWVZeTVpVzZLaTJxNXV1WSJ9.eyJpc3MiOiJodHRwczovL3RhaW50MjQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY0MzI1ODliZDhjZDJlODhkMGVhMDZkZCIsImF1ZCI6ImZzbmQiLCJpYXQiOjE2ODEwMjYyNDYsImV4cCI6MTY4MTExMjY0NiwiYXpwIjoiTVBsNkM2aXlrOTVNS203TURHNE1WMUNOcmdoVmpCOG4iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImFkZDphY3RvcnMiLCJhZGQ6bW92aWVzIiwiZGVsZXRlOmFjdG9ycyIsImRlbGV0ZTptb3ZpZXMiLCJyZWFkOmFjdG9ycyIsInJlYWQ6bW92aWVzIiwidXBkYXRlOmFjdG9ycyIsInVwZGF0ZTptb3ZpZXMiXX0.n-l5QcN3EAPeq6FVyQSp35mBZ7-koU4HryTkHizYfVUWr8I-bAYWCRkfRIoLo6Ge8rqeLQWXv4YCWT-NMduO_7SzoKnNnGsvE5UYv_LelBK3ZurPXUXsyH29Cwxken-nSCgSy7IMCmPdgXIsOQc4rdXZaYev9uHqAHRHregwcBEyxmayiRJlGQlBuQw2pTi0hxmaNiIVcuK5_3ZCuoUG69vgYD-nOwKbm_ij9pITv5efdJyNg3g0k48EcGtMKzNyzqBHMwK1p4iaUhb_gZlB8gOAeeo9yhijU1boesck6krvjFQHxi_tBa8bln9TGJNeedHnW4TA8B2KkoMz6neOhw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/movies/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "https://fsnd-final-capstone.herokuapp.com",
+			"type": "default"
+		}
+	]
+}
