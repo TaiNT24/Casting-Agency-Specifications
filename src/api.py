@@ -10,7 +10,7 @@ from .auth.auth import AuthError, requires_auth
 
 URL_AUTH = os.getenv('AUTH0_DOMAIN', 'taint24.us.auth0.com')
 AUDIENCE = os.getenv('API_AUDIENCE', 'fsnd')
-CLIENT_ID = os.getenv('CLIENT_ID', 'MPl6C6iyk95MKm7MDG4MV1CNrghVjB8n')
+CLIENT_ID = os.getenv('CLIENT_ID', '')
 CALLBACK_URL = os.getenv('CALLBACK_URL', 'http://localhost:5000')
 
 def create_app(test_config=None):
