@@ -5,8 +5,8 @@ import json
 from flask_cors import CORS
 from datetime import datetime
 
-from database.models import db_drop_and_create_all, setup_db, Actors, Movies
-from auth.auth import AuthError, requires_auth
+from .database.models import db_drop_and_create_all, setup_db, Actors, Movies
+from .auth.auth import AuthError, requires_auth
 
 URL_AUTH = os.getenv('AUTH0_DOMAIN', 'taint24.us.auth0.com')
 AUDIENCE = os.getenv('API_AUDIENCE', 'fsnd')
@@ -18,7 +18,8 @@ def create_app(test_config=None):
     setup_db(app)
     CORS(app)
 
-    db_drop_and_create_all()
+    # FOR first time run source
+    # db_drop_and_create_all()
 
     # ROUTES
     @app.route('/')
