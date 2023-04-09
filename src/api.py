@@ -22,31 +22,6 @@ def create_app(test_config=None):
     # ROUTES
     @app.route('/')
     def welcome():
-        a = request.args.get('access_token', None)
-
-        print(request.url)
-        if a:
-            return a
-        try:
-            link = 'https://'
-            link += URL_AUTH
-            link += '/authorize?'
-            link += 'audience=' + AUDIENCE + '&'
-            link += 'response_type=token&'
-            link += 'client_id=' + CLIENT_ID + '&'
-            link += 'redirect_uri=' + CALLBACK_URL + '/'
-            return link
-
-        except Exception:
-            abort(422)
-
-    @app.route('/')
-    def welcome():
-        a = request.args.get('access_token', None)
-
-        print(request.url)
-        if a:
-            return a
         try:
             link = 'https://'
             link += URL_AUTH
