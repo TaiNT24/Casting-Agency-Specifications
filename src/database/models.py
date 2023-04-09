@@ -58,7 +58,7 @@ class Movies(db.Model):
         return {
             'id': self.id,
             'title': self.title,
-            'release_date': self.release_date.strftime("")
+            'release_date': self.release_date.strftime("%Y-%m-%d")
         }
 
     def insert(self):
@@ -78,7 +78,7 @@ class Movies(db.Model):
 
 class Actors(db.Model):
     id = Column(Integer().with_variant(Integer, "sqlite"), primary_key=True)
-    name = Column(String(80), unique=True)
+    name = Column(String(80), nullable=False)
     age = Column(Integer, nullable=False)
     # 0: man, 1: women
     gender = Column(Integer, nullable=True)
