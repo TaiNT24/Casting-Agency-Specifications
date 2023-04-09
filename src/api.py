@@ -4,8 +4,8 @@ from sqlalchemy import exc
 import json
 from flask_cors import CORS
 
-from database.models import db_drop_and_create_all, setup_db
-from auth.auth import AuthError, requires_auth
+from .database.models import db_drop_and_create_all, setup_db
+from .auth.auth import AuthError, requires_auth
 
 URL_AUTH = os.getenv('AUTH0_DOMAIN', 'taint24.us.auth0.com')
 AUDIENCE = os.getenv('API_AUDIENCE', 'fsnd')
