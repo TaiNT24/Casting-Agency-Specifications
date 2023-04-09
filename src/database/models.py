@@ -2,7 +2,7 @@ import os
 from sqlalchemy import Column, String, Integer, Date
 from flask_sqlalchemy import SQLAlchemy
 import json
-
+from datetime import datetime
 database_filename = "database.db"
 project_dir = os.path.dirname(os.path.abspath(__file__))
 database_path = "sqlite:///{}".format(os.path.join(project_dir, database_filename))
@@ -37,7 +37,7 @@ def db_drop_and_create_all():
     # add one demo row
     mov = Movies()
     mov.title = 'Fast and furious 8'
-    mov.release_date = '2017-04-14'
+    mov.release_date = datetime.strptime('2017-04-14', '%Y-%m-%d')
 
     mov.insert()
 
